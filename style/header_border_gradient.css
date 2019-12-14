@@ -1,0 +1,52 @@
+/* Variables ----------------------------------------*/
+:root {
+  --color-black: rgb(24,24,24);
+  --color-grey: rgb(160,160,160);
+  --color-light-grey: rgb(220,220,220);
+  --color-red: rgb(100,0,0);
+  --color-blue: rgb(0,0,118);
+  --color-green: rgb(0,100,0);
+}
+
+
+/* Gradient Animation for Header Grid Borders ----------*/
+
+.header_border {
+    background: linear-gradient(-35deg,
+                    var(--color-blue), 
+                    var(--color-grey), 
+                    var(--color-red), 
+                    var(--color-grey),
+                    var(--color-green), 
+                    var(--color-grey), 
+                    var(--color-blue), 
+                    var(--color-grey), 
+                    var(--color-red), 
+                    var(--color-grey),
+                    var(--color-green), 
+                    var(--color-grey));
+    background-size: 800% 800%;
+    -webkit-animation: Gradient 60s ease infinite;
+    -moz-animation: Gradient 60s ease infinite;
+    animation: Gradient 60s ease infinite;
+}
+
+/* Gradient Animation */
+@-webkit-keyframes Gradient {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+}
+
+@-moz-keyframes Gradient {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+}
+
+@keyframes Gradient {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+}
+
